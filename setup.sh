@@ -33,7 +33,17 @@ sudo apt upgrade -y
 # Install pre-built dependencies from Apt #
 ###########################################
 echo -e "\e[1;4;93mStep 2. Install pre-built dependencies from Apt\e[0m"
-sudo apt install -y dnsmasq hostapd libbluetooth-dev apache2 php7.1 php7.1-mysql php7.1-bcmath mariadb-server libmariadbclient-dev libmariadbclient-dev-compat uvcdynctrl
+sudo apt install -y dnsmasq
+sudo apt install -y hostapd
+sudo apt install -y libbluetooth-dev
+sudo apt install -y apache2 php7.1
+sudo apt install -y php7.1-mysql
+sudo apt install -y php7.1-bcmath
+sudo apt install -y mariadb-server
+sudo apt install -y libmariadbclient-dev
+sudo apt install -y libmariadbclient-dev-compat
+sudo apt install -y uvcdynctrl
+
 sudo systemctl disable hostapd dnsmasq
 
 ################
